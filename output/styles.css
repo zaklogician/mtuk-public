@@ -1,0 +1,193 @@
+@keyframes bkgfade {
+  from { background-position: 0 0; }
+  to { background-position: 0 100%; }
+}
+.mdl-layout__header-animated {
+  background-image: url(images/header-fade.png);
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  animation: bkgfade 80s linear infinite;
+}
+
+@media all and (min-width: 961px) {
+  .mdl-layout__header-animated {
+    height: 192px;
+  }
+}
+
+.mdl-layout__drawer-button {
+  display: inline-block;
+}
+
+@media all and (min-width: 961px) {
+  .mdl-layout__drawer-button {
+    display: none;
+  }
+}
+
+@media all and (max-width: 960px) {
+  .mdl-layout__tab-bar-container {
+     display: none;
+  }
+}
+
+#elm-mdl-layout-main {
+  background-color: #f5f5f5 !important;
+}
+
+.markdown-content p {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.small-textfield {
+  width: 300px !important;
+  color: black;
+}
+
+.mdl-textfield > textarea {
+  max-width: 100%;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.mdl-textfield {
+  width: 100%;
+}
+
+@keyframes loadlatefade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.loadlate {
+  -webkit-animation: loadlatefade 1s ease-in 1;
+  -moz-animation: loadlatefade 1s ease-in 1;
+  -ms-animation: loadlatefade 1s ease-in 1;
+  animation: loadlatefade 1s ease-in 1;
+}
+
+
+.mdl-navigation__link-tabbed {
+  margin: 0;
+  border: none;
+  padding: 0 24px;
+  float: left;
+  position: relative;
+  display: block;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  text-decoration: none;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.6);
+  overflow: hidden;
+}
+
+
+.mdl-navigation__link-tabbed:hover::after {
+  height: 2px;
+  width: 100%;
+  display: block;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: rgb(255,64,129);
+}
+
+a.is-active::after {
+  height: 2px;
+  width: 100%;
+  display: block;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: rgb(255,64,129);
+  -webkit-animation: border-expand .2s cubic-bezier(.4,0,.4,1).01s alternate forwards;
+  animation: border-expand .2s cubic-bezier(.4,0,.4,1).01s alternate forwards;
+  transition: all 1s cubic-bezier(.4,0,1,1);
+}
+
+.page-content {
+  max-width: 860px;
+  width: calc(100%-16px);
+  margin: 0 auto;
+}
+
+.contentcard {
+  width: auto;
+  max-width: 860px;
+  margin: auto;
+  margin-top: 32px;
+  padding-left: 10px;
+  height: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.contentcard > * {
+    height: auto;
+}
+
+
+.schedulecard {
+  width: auto;
+  max-width: 860px;
+  margin: auto;
+  margin-top: 32px;
+  height: 100%;
+  min-height: 100% !important;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.schedulecard > * {
+    height: auto;
+}
+
+#ayse-berkman {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-image: url(images/head-ayse-berkman.jpg);
+  background-size: 100%;
+}
+
+#alex-wilkie {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-image: url(images/head-alex-wilkie.jpg);
+  background-size: 100%;
+}
+
+#salma-kuhlmann {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-image: url(images/head-salma-kuhlmann.jpg);
+  background-size: 100%;
+}
+
+#itai-ben-yaacov {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-image: url(images/head-itai-ben-yaacov.jpg);
+  background-size: 100%;
+}
